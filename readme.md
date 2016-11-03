@@ -50,9 +50,7 @@ Create `state` and container for data.  Returns `state` functions.
 
 ### Dispatch
 
-The `dispatch` function is called whenever values are updated.  You receive these updates in the form of `dispatch(index, value, oldValue)`.
-
-This is called by both `state.set()` and `state.update()`.
+Updates are called on your function like `dispatch(index, value, oldValue)`.  This is called by both `state.set()` and `state.update()`.
 
 #### Example
 
