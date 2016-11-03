@@ -11,7 +11,7 @@ var state = createState({
   // Handle value changes on the data
 })
 
-for (var i = 0; i < 100) {
+for (var i = 0; i < 100; i++) {
   state.stage(i, Math.random())
 }
 
