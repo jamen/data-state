@@ -6,15 +6,18 @@ A simple typed array state container that is fast and scalable.
 
 ```js
 var state = createState({
-  type: Float32Array
+  type: Float32Array,
+  length: 1000
 }, function dispatch (index, value, oldValue) {
   // Handle value changes on the data
 })
 
+// Stage values to write
 for (var i = 0; i < 100; i++) {
   state.stage(i, Math.random())
 }
 
+// Write stagled values
 state.update()
 ```
 
@@ -22,7 +25,6 @@ I might use it in managing coordinates in canvas, and videos/audio processing. O
 
 ```js
 var state = createState()
-
 state.set(0, 123)
 state.get(0) === 123
 ```
