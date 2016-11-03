@@ -1,0 +1,40 @@
+{
+  "name": "data-state",
+  "description": "Fast state based on top of typed arrays.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jamen/data-state",
+  "author": "Jamen Marz (https://git.io/jamen)",
+  "repository": "jamen/data-state",
+  "bugs": {
+    "url": "https://github.com/jamen/data-state/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "eslint index.js test.js && tape test.js | tap-spec"
+  },
+  "keywords": [
+    "state",
+    "managment",
+    "fast",
+    "simple",
+    "integers",
+    "fixed"
+  ],
+  "devDependencies": {
+    "benchmark": "^2.1.2",
+    "eslint": "^3.9.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2"
+  }
+}
