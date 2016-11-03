@@ -43,7 +43,7 @@ Create `state` and container for data.  Returns `state` functions.
 
  - `options` (`Object`): Options for your state and data.
    - `type` ([_`TypedArray`_](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)): A _`TypedArray`_ interface for the data backing your state.  Defaults to `Float32Array`.
-   - `data` ([`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)):
+   - `data` ([`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)): A buffer to initialize the typed array with. (Note: overrides `length` if set)
    - `length` (`Number`): Alternative to `data`, initialize empty typed array at specified length. Defaults to `10000`.
    - `lowSecurity` (`Boolean`): Makes the `dump()` return state internals. Defaults to `false`.
  - `dispatch` (`Function`): Dispatch function triggered every time you update.
